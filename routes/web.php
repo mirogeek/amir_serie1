@@ -26,3 +26,9 @@ Route::get('/welcome', function () {
     $var = 8;
     return view("welcome", compact("var"));
 });
+
+Route::get('/addition',function(){
+    $var1 = 2;
+    $var2 = 2;
+    return view("addition", compact("var1","var2"));
+});
