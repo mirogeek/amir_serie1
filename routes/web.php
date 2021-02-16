@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Routing\Route as RoutingRoute;
+use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,4 +20,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/amir', function () {
     $var = 'rebbah le bg';
     return "<h2>{$var}</h2>";
+});
+
+Route::get('/welcome', function () {
+    $var = 8;
+    return view("welcome", compact("var"));
 });
