@@ -32,3 +32,8 @@ Route::get('/addition',function(){
     $var2 = 2;
     return view("addition", compact("var1","var2"));
 });
+
+Route::get('/couleurzer/{var}',function($var){
+    $colors=["bleu","rouge"];
+    return view("couleurzer", compact("colors"));
+});
